@@ -1,4 +1,4 @@
-# Generalizability of BioNER Models to Unseen Entities
+# Generalizability of BioNER Models to Novel Entities
 
 This is the official repository for the paper "[How Do Your Biomedical Named Entity Models Generalize to Novel Entities?](https://arxiv.org/abs/2101.00160)."
 
