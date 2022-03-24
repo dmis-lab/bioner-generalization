@@ -2,6 +2,9 @@
 
 This code is based on the official code ([link](https://github.com/dmis-lab/biobert-pytorch/tree/master/named-entity-recognition)) for the PyTorch version of BioBERT.
 
+### Requirements
+* transformers==3.0.0
+
 ### Training
 ```bash
 export SAVE_DIR=./output
