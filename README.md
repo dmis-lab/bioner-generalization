@@ -1,6 +1,6 @@
 # Generalizability of BioNER Models to Novel Entities
 
-This is the official repository for the paper "How Do Your Biomedical Named Entity Models Generalize to Novel Entities?."
+This is the official repository for the paper "**How Do Your Biomedical Named Entity Models Generalize to Novel Entities?**."
 The paper has been accepted by IEEE Access, and is now available in the Early Access ([link](https://ieeexplore.ieee.org/abstract/document/9730848)).
 
 ## Overview
