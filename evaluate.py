@@ -1,12 +1,9 @@
 import argparse
-import copy
-import json
-from seqeval.metrics import f1_score, precision_score, recall_score, classification_report
-from nervaluate import Evaluator
 import os
+import re
+from seqeval.metrics import f1_score, precision_score, recall_score, classification_report
 from collections import Counter
 from tqdm import tqdm
-import re
 from string import punctuation
 from nltk.stem import PorterStemmer 
 from nltk.tokenize import word_tokenize 
@@ -222,12 +219,12 @@ def print_score(SPLITS, test_splits, predictions):
 
     for spl in SPLITS:
         if spl == 'Overall':
-            p = precision_score(test_splits['Overall'], predictions)
-            r = recall_score(test_splits['Overall'], predictions)
-            f1 = f1_score(test_splits['Overall'], predictions)
+            p = precision_score([test_splits['Overall']], [predictions])
+            r = recall_score([test_splits['Overall']], [predictions])
+            f1 = f1_score([test_splits['Overall']], [predictions])
             print("{} {:2.1f}\t{:2.1f}\t{:2.1f}".format(spl, p*100, r*100, f1*100))
         else:
-            r = recall_score(test_splits[spl], predictions)
+            r = recall_score([test_splits[spl]], [predictions])
             print("{} {:2.1f}".format(spl, r*100))
 
 def main():

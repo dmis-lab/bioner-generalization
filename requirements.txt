@@ -1,0 +1,4 @@
+seqeval
+tqdm
+nltk
+
