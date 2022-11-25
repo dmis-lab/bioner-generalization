@@ -23,7 +23,8 @@ To complement traditional evaluation methods (i.e., measuring overall performanc
 
 ### Requirements
 
-To measure the generalizability of a model, install the **seqeval** framework by running `pip install seqeval` or `conda install -c conda-forge seqeval`.
+This repository has been tested in a Python 3 environment. 
+To measure the generalizability of a model, please install all the requirements by running `pip install -r requirements.txt`.
 Also, you need (1) **mention dictionary**, (2) **CUI dictionary**, (3) **test set annotated with BIO labels**, (4) **test set annotated with CUIs**, and (5) **model predictions**.
 We provide dictionaries and preprocessed datasets in the `resources` directory, but you can replace them with your datasets or model outputs with the same format.
 
